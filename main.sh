@@ -45,7 +45,7 @@ get_req_time() {
 }
 
 send_reply() {
-  echo -e "HTTP/1.1 200 OK\r\n$(date)\r\n\r\n{time: \"${REQTIME}\", ip: \"${REMOTEADDR}\"" 
+  echo -e "HTTP/1.1 200 OK\r\n\r\n\r\n{time: \"${REQTIME}\", ip: \"${REMOTEADDR}\"" 
 }
 
 clean_tmp() {
