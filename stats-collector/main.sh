@@ -39,7 +39,7 @@ DEL() {
 
 GETALL() {
   for index in "${!DBData[@]}"; do
-    echo "{ "datapoint_$index:" "${DBData[index]}", "time_$index:" "${DBTime[index]}" },"
+    echo "{ "datapoint_$index:" "${DBData[index]}", "time_$index:" "${DBTime[index]}" }"
   done
 }
 
@@ -57,11 +57,9 @@ REAP() {
   done
 }
 
-
 #
 # Main
 #
-
 
 countWriter() {
   cn=$1
@@ -85,9 +83,6 @@ getChannelIds() {
     getChannelCounts $id $name
   done
 }
-
-
-
 
 #
 # API
