@@ -1,4 +1,0 @@
-# Configuration file for basic api settings, port etc.
-port=8080
-LogFile="./log"
-TmpFile="/tmp/bash_net_api.tmp"
